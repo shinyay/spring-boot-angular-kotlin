@@ -8,9 +8,7 @@ import org.springframework.web.bind.annotation.RestController
 
 @RestController
 @CrossOrigin(origins = ["http://localhost:4200"])
-class UserController(repository: UserRepository) {
-
-    private val userRepository: UserRepository = repository
+class UserController(var userRepository: UserRepository) {
 
     @GetMapping("/users")
     fun getUsers(): MutableIterable<UserEntity> = userRepository.findAll()
