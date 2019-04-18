@@ -33,6 +33,11 @@ $ docker build -t angular-cli ./angular-cli
 $ docker run --rm -it -v (pwd):/app shinyay/angular-cli ng new angularclient
 ```
 
+#### Fix vulnability
+```
+$ docker run --rm -it -v (pwd)/angularclient:/app shinyay/angular-cli npm audit fix
+```
+
 ## Installation
 
 ## Licence
