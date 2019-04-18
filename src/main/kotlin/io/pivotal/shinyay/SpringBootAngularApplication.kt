@@ -13,7 +13,7 @@ class SpringBootAngularApplication {
 	@Bean
 	fun init(userRepository: UserRepository) = CommandLineRunner {
 		arrayOf("A-san", "B-san", "C-san", "D-san", "E-san").forEach { name ->
-			userRepository.save(UserEntity(name, "$name@pivotal.io"))
+			userRepository.save(UserEntity(0, name, "$name@pivotal.io"))
 		}
 	}
 }
