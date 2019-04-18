@@ -15,10 +15,16 @@ Overview
 
 ## Usage
 
-### Update angular-cli submodule
+### Angular-CLI Docker Container
+#### Update angular-cli submodule
 
 ```
 $ git submodule update --init --recursive
+```
+#### Docker Container Build
+
+```
+$ docker build -t angular-cli ./angular-cli
 ```
 
 ## Installation
