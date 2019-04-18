@@ -15,6 +15,12 @@ Overview
 
 ## Usage
 
+### Update angular-cli submodule
+
+```
+$ git submodule update --init --recursive
+```
+
 ## Installation
 
 ## Licence
