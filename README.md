@@ -27,6 +27,12 @@ $ git submodule update --init --recursive
 $ docker build -t angular-cli ./angular-cli
 ```
 
+### Anglar Procject Template
+#### Create Angular Project
+```
+$ docker run --rm -it -v (pwd):/app shinyay/angular-cli ng new angularclient
+```
+
 ## Installation
 
 ## Licence
