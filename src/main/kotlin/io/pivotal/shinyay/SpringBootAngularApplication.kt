@@ -15,6 +15,7 @@ class SpringBootAngularApplication {
 		arrayOf("A-san", "B-san", "C-san", "D-san", "E-san").forEach { name ->
 			userRepository.save(UserEntity(0, name, "${name.toLowerCase()}@pivotal.io"))
 		}
+		userRepository.findAll().forEach(::println)
 	}
 }
 
